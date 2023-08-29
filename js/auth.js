@@ -29,7 +29,7 @@ captureBtn.addEventListener('click', function() {
     formData.append('file', blob, 'photo.jpg');
 
     // Send the captured image to the API for prediction
-    fetch('https://emo-flask-img.onrender.com/predict_emotion', {
+    fetch('https://emo-dect-img.onrender.com/predict_emotion', {
       method: 'POST',
       body: formData
     })
