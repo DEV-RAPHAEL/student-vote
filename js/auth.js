@@ -41,9 +41,11 @@ captureBtn.addEventListener('click', function() {
       const emotion = data.emotion;
       if (emotion === 'fear' || emotion === 'sad' ) {
         // Redirect to webpage for fear expression
+        console.log("Sad or Fear")
         window.location.href = './sorry.html';
       } else {
         // Redirect to webpage for other expressions
+        console.log("Happy or Positive")
         window.location.href = './vote.html';
       }
     })
